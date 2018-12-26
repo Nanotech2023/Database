@@ -1,0 +1,146 @@
+﻿<html>
+<head>
+    <title>Создание таблиц в HTML, примеры</title>
+</head>
+<body>
+ + <img src="C:\Users\Fwerfad\IdeaProjects\bd\bd\src\main\resources\example.png" alt="Помогите"><p>Goods</p>
+<table border="1" cellspacing="0"
+       cellpadding="8" style="background-color:#766CCC; color:#ffffff">
+<tr>
+<td>Id</td><td>VendorCode</td><td>Material</td><td>SellPrice</td><td>BuyPrice</td></tr>
+<tr>
+<td>E569B87F-B4F3-4D3E-8FE8-1C2E949DA9AB</td><td>432</td><td>сосна</td><td>70</td><td>30</td></tr>
+<tr>
+<td>E0E1A6BB-7908-430D-B988-A08A138813D2</td><td>123</td><td>дуб</td><td>50</td><td>30</td></tr>
+<tr>
+<td>CCEDD586-B720-4C33-B44B-A8DDC658EBFE</td><td>432</td><td>дуб</td><td>100</td><td>60</td></tr>
+<tr>
+<td>69E266F2-722A-42A2-8BA0-A972CCCA4882</td><td>321</td><td>сосна</td><td>40</td><td>25</td></tr>
+<tr>
+<td>F54D32DD-117F-4EA7-ADDA-B3B2BA304A06</td><td>432</td><td>дуб</td><td>60</td><td>35</td></tr>
+<tr>
+<td>A8E0EE84-29E1-4FAD-BD08-EA8CEF80D1FF</td><td>432</td><td>береза</td><td>120</td><td>80</td></tr>
+
+</table><p>Batch</p>
+<table border="1" cellspacing="0"
+       cellpadding="8" style="background-color:#766CCC; color:#ffffff">
+<tr>
+<td>Id</td><td>Amount</td><td>Goods_Id</td><td>Supply_Id</td></tr>
+<tr>
+<td>5A28062E-13C1-4CB3-A993-C29EB316C8CC</td><td>5</td><td>E0E1A6BB-7908-430D-B988-A08A138813D2</td><td>871C849C-CF72-4527-A262-632B8E7C12E3</td></tr>
+<tr>
+<td>1C3D07E1-7618-4C2E-BEC5-DBA0BC0C2020</td><td>4</td><td>69E266F2-722A-42A2-8BA0-A972CCCA4882</td><td>98138B8E-872F-4D62-9EB7-D82E268D6553</td></tr>
+
+</table><p>BuyOperation</p>
+<table border="1" cellspacing="0"
+       cellpadding="8" style="background-color:#766CCC; color:#ffffff">
+<tr>
+<td>Id</td><td>Customer_Id</td><td>Cheque_Id</td></tr>
+<tr>
+<td>F68AFEDD-6F05-41A0-B9A6-2B54BEB589EE</td><td>DE2796E1-ADEF-407F-BA33-9DB541DC05A4</td><td>F4861753-1107-4B73-B974-96F370D99676</td></tr>
+<tr>
+<td>1EE1B091-B596-4217-B1F6-C9799E1355FB</td><td>803B49E1-AE17-40FC-ABE7-942C50967540</td><td>B83D00B2-179A-4966-87F7-0FD4E7995428</td></tr>
+
+</table><p>Cheque</p>
+<table border="1" cellspacing="0"
+       cellpadding="8" style="background-color:#766CCC; color:#ffffff">
+<tr>
+<td>Id</td><td>Date</td></tr>
+<tr>
+<td>B83D00B2-179A-4966-87F7-0FD4E7995428</td><td>1905-06-18 00:00:00.0</td></tr>
+<tr>
+<td>F4861753-1107-4B73-B974-96F370D99676</td><td>1954-10-06 00:00:00.0</td></tr>
+
+</table><p>ChequeDetails</p>
+<table border="1" cellspacing="0"
+       cellpadding="8" style="background-color:#766CCC; color:#ffffff">
+<tr>
+<td>Id</td><td>Amount</td><td>Price</td><td>Cheque_Id</td><td>Goods_Id</td></tr>
+<tr>
+<td>FCD6992E-45FE-4855-910D-660088EE14FA</td><td>2</td><td>100</td><td>F4861753-1107-4B73-B974-96F370D99676</td><td>69E266F2-722A-42A2-8BA0-A972CCCA4882</td></tr>
+<tr>
+<td>2E9F595D-04AB-49FD-8C6D-74027F981A80</td><td>2</td><td>100</td><td>B83D00B2-179A-4966-87F7-0FD4E7995428</td><td>E0E1A6BB-7908-430D-B988-A08A138813D2</td></tr>
+
+</table><p>Customer</p>
+<table border="1" cellspacing="0"
+       cellpadding="8" style="background-color:#766CCC; color:#ffffff">
+<tr>
+<td>Id</td><td>FullName</td><td>Discount</td></tr>
+<tr>
+<td>803B49E1-AE17-40FC-ABE7-942C50967540</td><td>Петр Иванов</td><td>1</td></tr>
+<tr>
+<td>DE2796E1-ADEF-407F-BA33-9DB541DC05A4</td><td>Иван Петров</td><td>1</td></tr>
+
+</table><p>Employment</p>
+<table border="1" cellspacing="0"
+       cellpadding="8" style="background-color:#766CCC; color:#ffffff">
+<tr>
+<td>Id</td><td>Post</td><td>EmploymentContractId</td><td>Personnel_Id</td><td>Room_Id</td></tr>
+<tr>
+<td>BBD3EEF3-646B-4A54-B83D-7EE921FE03AC</td><td>Кассир</td><td>443143443</td><td>86228797-104F-439A-B838-9188831180BE</td><td>DEBF3963-1F4C-4978-BFFA-5BF57C21C31E</td></tr>
+<tr>
+<td>86D4EA0B-02AC-439E-895D-D40FF4FDC858</td><td>Грузчик</td><td>443143444</td><td>30B1D5DA-267D-4BF3-9024-80AD4F6116F0</td><td>6E874BE6-A8D3-4FFF-B60C-BE008037E556</td></tr>
+
+</table><p>InternalOperation</p>
+<table border="1" cellspacing="0"
+       cellpadding="8" style="background-color:#766CCC; color:#ffffff">
+<tr>
+<td>Id</td><td>Transaction_Id</td></tr>
+<tr>
+<td>23DE0147-CA05-462E-8577-1C3204E9145A</td><td>BE60C347-B917-4125-A011-BF9DB328CC42</td></tr>
+<tr>
+<td>22A1810E-F189-476C-9BA4-6F2ED637B7C1</td><td>9BF0059E-BAA8-4836-80A4-49E60B497768</td></tr>
+
+</table><p>Personnel</p>
+<table border="1" cellspacing="0"
+       cellpadding="8" style="background-color:#766CCC; color:#ffffff">
+<tr>
+<td>Id</td><td>FullName</td><td>Age</td></tr>
+<tr>
+<td>30B1D5DA-267D-4BF3-9024-80AD4F6116F0</td><td>Денис Орлов</td><td>19</td></tr>
+<tr>
+<td>86228797-104F-439A-B838-9188831180BE</td><td>Вася Кузнецов</td><td>27</td></tr>
+
+</table><p>Producer</p>
+<table border="1" cellspacing="0"
+       cellpadding="8" style="background-color:#766CCC; color:#ffffff">
+<tr>
+<td>Id</td><td>Type</td><td>Address</td><td>ContactInformation</td></tr>
+<tr>
+<td>912A77DB-677F-46C3-A7C9-5625F57CAD0C</td><td>фурнитура</td><td>Невский проспект, дом 12</td><td>+79217784488</td></tr>
+<tr>
+<td>44C22704-E3BA-4453-A2FB-E7E31C72AB4C</td><td>мебель</td><td>Невский проспект, дом 21</td><td>+79217788844</td></tr>
+
+</table><p>Room</p>
+<table border="1" cellspacing="0"
+       cellpadding="8" style="background-color:#766CCC; color:#ffffff">
+<tr>
+<td>Id</td><td>Name</td><td>Address</td></tr>
+<tr>
+<td>DEBF3963-1F4C-4978-BFFA-5BF57C21C31E</td><td>Магазин</td><td>Пр. Большевиков, дом 5</td></tr>
+<tr>
+<td>6E874BE6-A8D3-4FFF-B60C-BE008037E556</td><td>Склад</td><td>Пр. Большевиков, дом 4</td></tr>
+
+</table><p>Storage</p>
+<table border="1" cellspacing="0"
+       cellpadding="8" style="background-color:#766CCC; color:#ffffff">
+<tr>
+<td>Id</td><td>Room_Id</td><td>Batch_Id</td></tr>
+<tr>
+<td>423B8B08-3F2D-4049-86DC-3ED9221EBB27</td><td>DEBF3963-1F4C-4978-BFFA-5BF57C21C31E</td><td>5A28062E-13C1-4CB3-A993-C29EB316C8CC</td></tr>
+<tr>
+<td>81A1CE39-A014-4D19-BBD5-B5FBE39BFC5D</td><td>6E874BE6-A8D3-4FFF-B60C-BE008037E556</td><td>1C3D07E1-7618-4C2E-BEC5-DBA0BC0C2020</td></tr>
+
+</table><p>Supply</p>
+<table border="1" cellspacing="0"
+       cellpadding="8" style="background-color:#766CCC; color:#ffffff">
+<tr>
+<td>Id</td><td>Date</td><td>Producer_Id</td></tr>
+<tr>
+<td>871C849C-CF72-4527-A262-632B8E7C12E3</td><td>1905-07-02 00:00:00.0</td><td>44C22704-E3BA-4453-A2FB-E7E31C72AB4C</td></tr>
+<tr>
+<td>98138B8E-872F-4D62-9EB7-D82E268D6553</td><td>1905-07-02 00:00:00.0</td><td>912A77DB-677F-46C3-A7C9-5625F57CAD0C</td></tr>
+
+</table></table>
+</body>
+</html>
